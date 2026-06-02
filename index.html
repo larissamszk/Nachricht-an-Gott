@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nachricht an Gott</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif; 
+        background: linear-gradient(to bottom, #87CEEB, #ffffff);
+        text-align: center; 
+        padding: 40px;
+        min-height: 100vh;
+      }
+      .container {
+        max-width: 600px;
+        margin: auto;
+        background: white; 
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      }
+      textarea {
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+        font-size: 16px;
+        margin-top: 15px;
+      }
+      button {
+        margin-top: 15px; 
+        padding: 12px 25px; 
+        font-size: 16px; 
+        cursor: pointer;
+      }
+      #antwort {
+        display: none; 
+        margin-top: 30px;
+        font-size: 18px; 
+        line-height: 1.6; 
+      }
+    </style>
+  </head>
+ <body>
+   <div class="container">
+     <h1> Nachricht an Gott </h1>
+     <p> 
+     Schreib deine persönliche Nachricht an Gott. 
+     Alles, was dich bewegt, beschäftigt oder freut 
+     </p>
+     <textarea placeholder="Deine Nachricht...">
+       <br>
+       <button onclick="zeigen()">
+       Abschicken
+     </button>
+       <div id="antwort">
+       <h2> Eine Nachricht für dich </h2>
+       <p> 
+       Ich sehe dich. <br>
+       Ich höre dich. <br><br>
+       Alles, was du mir anvertraust, ist bei mir gut aufgehoben. 
+       Du musst nicht perfekt sein. 
+       Du musst nicht alles allein schaffen. 
+       Ich bin bei dir - heute, morgen und an jedem Tag. 
+       Du bist geliebt, genau so wie du bist. 
+     </p>
+     </div>
+     </div>
+       <script>
+       function zeigen() {
+       document.getElementById("antwort").style.display="block";
+       }
+     </script>
+ </body> 
+     </html>
