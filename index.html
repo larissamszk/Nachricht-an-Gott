@@ -55,6 +55,9 @@
        <button onclick="zeigen()">
        Abschicken
      </button>
+     <p id="gesendet" sytle="display:none; margin-top:20px;">
+       Deine Nachricht wurde Gott anvertraut 
+     </p>
        <div id="antwort">
        <h2> Eine Nachricht für dich </h2>
        <p> 
@@ -70,7 +73,13 @@
      </div>
        <script>
        function zeigen() {
-       document.getElementById("antwort").style.display="block";
+       document.querySelector("textarea").sytle.display="none";
+         document.querySelector("button").sytle.display="none";
+         document.getElementById("gesendet").sytle.display="block";
+         setTimeout(function() { 
+         document.getElementById("gesendet").sytle.display="none";
+         document.getElementById("antwort").sytle.display="block";
+         }, 2000);
        }
      </script>
  </body> 
